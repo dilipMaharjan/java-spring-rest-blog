@@ -17,6 +17,8 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Version
+    private Long version;
     private String title;
     @Column(length = 1000000)
     @Lob
